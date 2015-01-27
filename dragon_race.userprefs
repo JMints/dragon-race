@@ -2,12 +2,11 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\standins\scripts\move_opponent_script.cs">
     <Files>
-      <File FileName="..\iFactor\Assets\scripts\menu_scripts\quit_script.cs" Line="1" Column="1" />
-      <File FileName="..\iFactor\Assets\scripts\send_message_script.cs" Line="1" Column="1" />
-      <File FileName="..\iFactor\Assets\scripts\menu_scripts\email_script.cs" Line="7" Column="3" />
-      <File FileName="..\iFactor\Assets\scripts\text_fields_script.cs" Line="1" Column="1" />
-      <File FileName="Assets\standins\scripts\move_player_script.cs" Line="57" Column="3" />
-      <File FileName="Assets\standins\scripts\move_opponent_script.cs" Line="27" Column="4" />
+      <File FileName="Assets\standins\scripts\move_opponent_script.cs" Line="1" Column="1" />
+      <File FileName="Assets\standins\scripts\move_player_script.cs" Line="1" Column="1" />
+      <File FileName="Assets\standins\scripts\obs_toggle_a.cs" Line="1" Column="1" />
+      <File FileName="Assets\standins\scripts\lever_script.cs" Line="1" Column="1" />
+      <File FileName="Assets\standins\scripts\obs_toggle_b.cs" Line="4" Column="47" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
