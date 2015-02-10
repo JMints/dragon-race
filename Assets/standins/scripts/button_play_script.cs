@@ -10,7 +10,7 @@ public class button_play_script : MonoBehaviour
 		if(Input.GetMouseButtonDown(0))
 		{
 			// load the game
-			Application.LoadLevel("dragon_race_scene");
+			Application.LoadLevel("level_design");
 		}
 	}
 }
