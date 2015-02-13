@@ -7,18 +7,21 @@ public class move_opponent_script : move_player_script
 {
 	protected override void Start()
 	{
-		slow_obs_large = -0.2F;
-		slow_obs_small = -0.4F;
-		slow_wall = -0.3F;
-
-		speed_y_max = -10F; //This enemy is a little slower than the player
+		//These values will multiply the current speed
+		//by the given amount; i.e. slow_obs_small = 0.8F
+		//means that when hitting a small obstacle
+		//we change to 80% of our current speed.
+		slow_obs_large = 0.6F;
+		slow_obs_small = 0.8F;
+		slow_wall = 0.7F;
+		
+		speed_y_max = -9F; //This enemy is a little slower than the player
 		speed_x_max = 10F;
 		
-		y_accelerate = 1F;
+		y_accelerate = 1.5F;
 		y_coefficient = 1F;
-
+		
 		permission_to_fly = false;
-
 	}
 
 	//Use FixedUpdate for physics stuff vs normal Update

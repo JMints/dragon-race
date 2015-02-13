@@ -3,7 +3,7 @@ using System.Collections;
 
 public class move_camera_script : MonoBehaviour 
 {
-	int camera_offset = -5;
+	int camera_offset = -10;
 
 	// Update is called once per frame
 	void Update () 

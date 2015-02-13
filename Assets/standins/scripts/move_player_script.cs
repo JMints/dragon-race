@@ -18,14 +18,18 @@ public class move_player_script : MonoBehaviour
 
 	protected virtual void Start()
 	{
-		slow_obs_large = -0.2F;
-		slow_obs_small = -0.4F;
-		slow_wall = -0.3F;
+		//These values will multiply the current speed
+		//by the given amount; i.e. slow_obs_small = 0.8F
+		//means that when hitting a small obstacle
+		//we change to 80% of our current speed.
+		slow_obs_large = 0.6F;
+		slow_obs_small = 0.8F;
+		slow_wall = 0.7F;
 
 		speed_y_max = -10F;
 		speed_x_max = 10F;
 
-		y_accelerate = 1F;
+		y_accelerate = 1.5F;
 		y_coefficient = 1F;
 
 		permission_to_fly = false;
@@ -80,9 +84,11 @@ public class move_player_script : MonoBehaviour
 	protected void check_y()
 	{		
 		//y_coefficient should never become < 0
-		if(y_coefficient < 0)
+		//Change this to reflect what percent of the max speed
+		//is the minimum (NOTE: diff from value min speed.)
+		if(y_coefficient < 0.2F)
 		{
-			y_coefficient = 0;
+			y_coefficient = 0.2F;
 		}
 	}
 
@@ -92,7 +98,7 @@ public class move_player_script : MonoBehaviour
 		{
 			if(y_coefficient > 0) //prevents us from going so slow we go backwards ;)
 			{
-				y_coefficient += slow_obs_large;
+				y_coefficient *= slow_obs_large;
 				Destroy(collision.gameObject);
 			}
 		}
@@ -104,7 +110,7 @@ public class move_player_script : MonoBehaviour
 		{
 			if(y_coefficient > 0) //prevents us from going so slow we go backwards ;)
 			{
-				y_coefficient += slow_obs_small;
+				y_coefficient *= slow_obs_small;
 				Destroy (collision.gameObject);
 			}
 		}
@@ -116,8 +122,14 @@ public class move_player_script : MonoBehaviour
 		{
 			if(y_coefficient > 0) //prevents us from going so slow we go backwards ;)
 			{
-				y_coefficient += slow_wall;
+				y_coefficient *= slow_wall;
 			}
 		}
+	}
+
+	//Returns y_coefficient to UI.
+	public float getCurrentSpeed()
+	{
+		return y_coefficient;
 	}
 }

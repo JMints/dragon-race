@@ -55,6 +55,7 @@
      <Compile Include="Assets\standins\scripts\move_player_script.cs" />
      <Compile Include="Assets\standins\scripts\obs_toggle_a.cs" />
      <Compile Include="Assets\standins\scripts\obs_toggle_b.cs" />
+     <Compile Include="Assets\standins\scripts\speed_bar_script.cs" />
      <Compile Include="Assets\standins\scripts\switch_script.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
