@@ -1,17 +1,27 @@
-Initialize engine version: 4.5.5f1 (7684ad0c5a44)
+Initialize engine version: 4.6.2f1 (bd99309c2ad7)
 GfxDevice: creating device client; threaded=1
 Direct3D:
-    Version:  Direct3D 9.0c [aticfx32.dll 8.17.10.29]
-    Renderer: ATI Mobility Radeon HD 5470 
-    Vendor:   ATI
-    VRAM:     1012 MB (via DXGI)
-    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=1 INTZ=1 RAWZ=0 NULL=1 RESZ=1 SlowINTZ=1
+    Version:  Direct3D 9.0c [nvd3dum.dll 9.18.13.4709]
+    Renderer: NVIDIA GeForce GTX 650 Ti BOOST
+    Vendor:   NVIDIA
+    VRAM:     1989 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Jitter\Desktop\coding\unity\dragon_race\dragon_race_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Jitter\Desktop\coding\unity\dragon_race\dragon_race_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Jitter\Desktop\coding\unity\dragon_race\dragon_race_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Jitter\Desktop\coding\unity\dragon_race\dragon_race_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.087 seconds
-desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+Platform assembly: C:\projects\dragon-race\dragon_race_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\projects\dragon-race\dragon_race_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\projects\dragon-race\dragon_race_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\projects\dragon-race\dragon_race_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\projects\dragon-race\dragon_race_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\projects\dragon-race\dragon_race_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.065 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
+Platform assembly: C:\projects\dragon-race\dragon_race_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\projects\dragon-race\dragon_race_Data\Managed\System.dll (this message is harmless)
+UnloadTime: 0.471949 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 433.
+Total: 2.014085 ms (FindLiveObjects: 0.026995 ms CreateObjectMapping: 0.011790 ms MarkObjects: 0.124425 ms  DeleteObjects: 0.012721 ms)
+
