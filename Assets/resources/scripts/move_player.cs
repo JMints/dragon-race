@@ -5,13 +5,13 @@ public class move_player : MonoBehaviour
 {
 	//When testing, modify numbers from within unity, not the script directly.
 	protected float slow_wall; //% slowed when a wall is hit
-	protected float slow_obs_large; //%slowed when big box is hit
-	protected float slow_obs_small; //% slowed when small box is hit
+	public float slow_obs_large; //%slowed when big box is hit
+	public float slow_obs_small; //% slowed when small box is hit
 
-	public float speed_y_max;
-	protected float speed_x_max;
+	public float speed_y_max; //this is the speed you start at
+	public float speed_x_max;
 	
-	protected float y_accelerate; //Determines how fast we accelerate back to max speed
+	public float y_accelerate; //Determines how fast we accelerate back to max speed
 	public float y_coefficient; //% of max horizontal speed
 
 	protected bool permission_to_fly;
@@ -26,8 +26,8 @@ public class move_player : MonoBehaviour
 		slow_obs_small = 0.8F;
 		slow_wall = 0.7F;
 
-		speed_y_max = -10F;
-		speed_x_max = 10F;
+		speed_y_max = -20F;
+		speed_x_max = 17F;
 
 		y_accelerate = 1.5F;
 		y_coefficient = 1F;
