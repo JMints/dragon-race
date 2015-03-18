@@ -19,9 +19,9 @@ desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Input initialized.
 Platform assembly: C:\projects\dragon-race\dragon_race_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\projects\dragon-race\dragon_race_Data\Managed\System.dll (this message is harmless)
-UnloadTime: 0.471949 ms
+UnloadTime: 0.526250 ms
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 433.
-Total: 2.014085 ms (FindLiveObjects: 0.026995 ms CreateObjectMapping: 0.011790 ms MarkObjects: 0.124425 ms  DeleteObjects: 0.012721 ms)
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 481.
+Total: 1.018058 ms (FindLiveObjects: 0.024823 ms CreateObjectMapping: 0.011480 ms MarkObjects: 0.160419 ms  DeleteObjects: 0.010860 ms)
 

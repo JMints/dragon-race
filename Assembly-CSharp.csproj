@@ -46,17 +46,17 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\standins\scripts\button_end_script.cs" />
-     <Compile Include="Assets\standins\scripts\button_play_script.cs" />
-     <Compile Include="Assets\standins\scripts\end_game_script.cs" />
-     <Compile Include="Assets\standins\scripts\lever_script.cs" />
-     <Compile Include="Assets\standins\scripts\move_camera_script.cs" />
-     <Compile Include="Assets\standins\scripts\move_opponent_script.cs" />
-     <Compile Include="Assets\standins\scripts\move_player_script.cs" />
-     <Compile Include="Assets\standins\scripts\obs_toggle_a.cs" />
-     <Compile Include="Assets\standins\scripts\obs_toggle_b.cs" />
-     <Compile Include="Assets\standins\scripts\speed_bar_script.cs" />
-     <Compile Include="Assets\standins\scripts\switch_script.cs" />
+     <Compile Include="Assets\resources\scripts\button_end.cs" />
+     <Compile Include="Assets\resources\scripts\button_play.cs" />
+     <Compile Include="Assets\resources\scripts\game_end.cs" />
+     <Compile Include="Assets\resources\scripts\game_pause.cs" />
+     <Compile Include="Assets\resources\scripts\lever.cs" />
+     <Compile Include="Assets\resources\scripts\move_camera.cs" />
+     <Compile Include="Assets\resources\scripts\move_opponent.cs" />
+     <Compile Include="Assets\resources\scripts\move_player.cs" />
+     <Compile Include="Assets\resources\scripts\obs_toggle_a.cs" />
+     <Compile Include="Assets\resources\scripts\obs_toggle_b.cs" />
+     <Compile Include="Assets\resources\scripts\speed_bar.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
  </Reference>

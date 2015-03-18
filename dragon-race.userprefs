@@ -1,9 +1,18 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/standins/scripts/button_play_script.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\resources\scripts\game_pause.cs">
     <Files>
-      <File FileName="Assets/standins/scripts/button_play_script.cs" Line="1" Column="1" />
-      <File FileName="Assets/standins/scripts/end_game_script.cs" Line="1" Column="1" />
+      <File FileName="Assets\resources\scripts\button_end.cs" Line="1" Column="1" />
+      <File FileName="Assets\resources\scripts\button_play.cs" Line="7" Column="9" />
+      <File FileName="Assets\resources\scripts\move_player.cs" Line="1" Column="1" />
+      <File FileName="Assets\resources\scripts\game_end.cs" Line="1" Column="1" />
+      <File FileName="Assets\resources\scripts\game_pause.cs" Line="2" Column="1" />
+      <File FileName="Assets\resources\scripts\lever.cs" Line="1" Column="1" />
+      <File FileName="c:\projects\dragon-race\Assets\resources\scripts\obs_toggle_a.cs" Line="1" Column="1" />
+      <File FileName="c:\projects\dragon-race\Assets\resources\scripts\obs_toggle_b.cs" Line="1" Column="1" />
+      <File FileName="Assets\resources\scripts\move_camera.cs" Line="1" Column="1" />
+      <File FileName="Assets\resources\scripts\move_opponent.cs" Line="1" Column="1" />
+      <File FileName="Assets\resources\scripts\speed_bar.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
