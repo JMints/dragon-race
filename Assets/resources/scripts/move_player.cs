@@ -15,6 +15,7 @@ public class move_player : MonoBehaviour
 	public float y_coefficient; //% of max horizontal speed
 
 	protected bool permission_to_fly;
+	public Camera camera_main; //Used to determine if camera still panning.
 
 	protected virtual void Start()
 	{
@@ -56,11 +57,14 @@ public class move_player : MonoBehaviour
 		float direction_x = Input.GetAxis ("Horizontal");
 
 		if(permission_to_fly)
-			rigidbody2D.velocity = new Vector2 (direction_x * speed_x_max, y_coefficient * speed_y_max);
+			GetComponent<Rigidbody2D>().velocity = new Vector2 (direction_x * speed_x_max, y_coefficient * speed_y_max);
 
 		//Set initial fly permission
-		if (Input.GetKeyDown (KeyCode.DownArrow) == true)
-			permission_to_fly = true; //sloppy - hits every time after as well
+		if (camera_main.GetComponent<move_camera>().scrolled) //Only works if camera done scrolling
+		{
+			if (Input.GetKeyDown (KeyCode.DownArrow) == true)
+				permission_to_fly = true; //sloppy - hits every time after as well
+		}
 
 		//Accelerate if the down arrow key is pressed during this frame
 		if ( Input.GetKey(KeyCode.DownArrow) == true )

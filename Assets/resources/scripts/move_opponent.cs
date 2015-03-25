@@ -32,7 +32,7 @@ public class move_opponent : move_player
 		float direction_x = AI (gameObject, obstacles_c, lever_c); //How direction_x is determined at any given step will be essentially be the AI
 
 		if(permission_to_fly)
-			rigidbody2D.velocity = new Vector2 (direction_x * speed_x_max, y_coefficient * speed_y_max);
+			GetComponent<Rigidbody2D>().velocity = new Vector2 (direction_x * speed_x_max, y_coefficient * speed_y_max);
 
 		//always down key
 		Acceleration();
