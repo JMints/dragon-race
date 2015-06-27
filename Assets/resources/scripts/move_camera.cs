@@ -3,12 +3,12 @@ using System.Collections;
 
 public class move_camera : MonoBehaviour 
 {
-	int camera_offset = -10;
+	//+int camera_offset = -10;
 	public bool scrolled;
 	KeyCode key_skip;
 
 	//Set in editor
-	public GameObject player;
+	GameObject player;
 	public GameObject start_line;
 	public GameObject finish_line;
 
@@ -20,7 +20,9 @@ public class move_camera : MonoBehaviour
 
 	void Start ()
 	{
-		scrolled = false;
+		player = GameObject.Find ("player");
+
+		scrolled = true;
 		key_skip = KeyCode.Space;
 
 		start = start_line.transform.position.y;
@@ -32,6 +34,7 @@ public class move_camera : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
+
 		//Allows us to skip scrolling script with key press
 		if (Input.GetKeyUp (key_skip))
 			scrolled = true;
@@ -69,8 +72,11 @@ public class move_camera : MonoBehaviour
 
 		if (scrolled)
 		{
+			float speed = player.GetComponent<move_player>().speed_y_max * player.GetComponent<move_player>().y_coefficient * Time.deltaTime;
+			if(!player.GetComponent<move_player>().permission_to_fly)
+				speed = 0;
 			//Set camera to an offset of the current player location
-			transform.localPosition = new Vector3 (transform.position.x, player.transform.position.y + camera_offset, transform.position.z);
+			transform.localPosition = new Vector3 (transform.position.x, transform.position.y + speed, transform.position.z);
 		}
 	}
 }
