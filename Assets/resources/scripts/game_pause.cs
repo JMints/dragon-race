@@ -5,20 +5,20 @@ public class game_pause : MonoBehaviour
 {
 	//This class handles all the functionality for the pause menu,
 	//as well as binding the pause menu to a key in-game.
-	KeyCode button_pause;
+	KeyCode key_skip;
 	public Canvas canvas_pause;
 
 	// Use this for initialization
 	void Start () 
 	{
-		button_pause = KeyCode.Escape;
+		key_skip = KeyCode.Escape;
 		//canvas_pause initialized in editor
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-		if (Input.GetKeyDown (button_pause)) 
+		if (Input.GetKeyDown (key_skip)) 
 		{
 			//If playing, pause;
 			if (Time.timeScale == 1.0F)

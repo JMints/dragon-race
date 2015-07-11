@@ -14,7 +14,8 @@ public class move_player : MonoBehaviour
 	public float y_accelerate; //Determines how fast we accelerate back to max speed
 	public float y_coefficient; //% of max horizontal speed
 
-	protected bool permission_to_fly;
+	public bool permission_to_fly;
+	public Camera camera_main; //Used to determine if camera still panning.
 
 	protected virtual void Start()
 	{
@@ -26,10 +27,10 @@ public class move_player : MonoBehaviour
 		slow_obs_small = 0.8F;
 		slow_wall = 0.7F;
 
-		speed_y_max = -20F;
-		speed_x_max = 17F;
+		speed_y_max = -32F;
+		speed_x_max = 22F;
 
-		y_accelerate = 1.5F;
+		y_accelerate = speed_y_max * -0.05F;
 		y_coefficient = 1F;
 
 		permission_to_fly = false;
@@ -55,16 +56,32 @@ public class move_player : MonoBehaviour
 	{
 		float direction_x = Input.GetAxis ("Horizontal");
 
+		//Up-down transform?
+		bool down = Input.GetKey (KeyCode.DownArrow);
+		bool up = Input.GetKey (KeyCode.UpArrow);
+		float move;
+		if (up && down)
+						move = 0F;
+				else if (up)
+						move = y_coefficient * 22F;
+				else if (down)
+						move = y_coefficient * -22F;
+				else
+						move = 0F;
+
+
 		if(permission_to_fly)
-			rigidbody2D.velocity = new Vector2 (direction_x * speed_x_max, y_coefficient * speed_y_max);
+			GetComponent<Rigidbody2D>().velocity = new Vector2 (direction_x * speed_x_max, (y_coefficient * speed_y_max) + move);
 
 		//Set initial fly permission
-		if (Input.GetKeyDown (KeyCode.DownArrow) == true)
-			permission_to_fly = true; //sloppy - hits every time after as well
+		if (camera_main.GetComponent<move_camera>().scrolled) //Only works if camera done scrolling
+		{
+			if (Input.GetKeyDown (KeyCode.DownArrow) == true)
+				permission_to_fly = true; //sloppy - hits every time after as well
+		}
 
 		//Accelerate if the down arrow key is pressed during this frame
-		if ( Input.GetKey(KeyCode.DownArrow) == true )
-			Acceleration();
+		Acceleration();
 	}
 	
 	//Separate function called for every kind of obstacle; handles slowdown
@@ -97,6 +114,8 @@ public class move_player : MonoBehaviour
 		if (collision.gameObject.tag == "obs_large")
 		{
 			y_coefficient *= slow_obs_large;
+			AudioSource audio = GetComponent<AudioSource>();
+			audio.Play();
 			Destroy(collision.gameObject);
 		}
 	}
@@ -106,6 +125,8 @@ public class move_player : MonoBehaviour
 		if (collision.gameObject.tag == "obs_small")
 		{
 			y_coefficient *= slow_obs_small;
+			AudioSource audio = GetComponent<AudioSource>();
+			audio.Play();
 			Destroy (collision.gameObject);
 		}
 	}
