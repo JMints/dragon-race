@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class game_pause : MonoBehaviour 
@@ -7,6 +8,7 @@ public class game_pause : MonoBehaviour
 	//as well as binding the pause menu to a key in-game.
 	KeyCode key_skip;
 	public Canvas canvas_pause;
+
 
 	// Use this for initialization
 	void Start () 
@@ -20,18 +22,23 @@ public class game_pause : MonoBehaviour
 	{
 		if (Input.GetKeyDown (key_skip)) 
 		{
-			//If playing, pause;
-			if (Time.timeScale == 1.0F)
-			{
-				Time.timeScale = 0.0F;
-				canvas_pause.enabled = true;
-			}
+			pause();
+		}
+	}
 
-			//Else unpause
-			else
-			{
-				resume();
-			}
+	public void pause()
+	{
+		//If playing, pause;
+		if (Time.timeScale == 1.0F)
+		{
+			Time.timeScale = 0.0F;
+			canvas_pause.enabled = true;
+		}
+		
+		//Else unpause
+		else
+		{
+			resume();
 		}
 	}
 

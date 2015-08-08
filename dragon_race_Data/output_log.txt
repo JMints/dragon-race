@@ -1,64 +1,30 @@
 Initialize engine version: 5.0.0f4 (5b98b70ebeb9)
 GfxDevice: creating device client; threaded=1
 Direct3D:
-    Version:  Direct3D 9.0c [nvd3dum.dll 9.18.13.4709]
-    Renderer: NVIDIA GeForce GTX 650 Ti BOOST
-    Vendor:   NVIDIA
-    VRAM:     1989 MB (via DXGI)
-    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 NULL=1 RESZ=0 SlowINTZ=0
+    Version:  Direct3D 9.0c [aticfx32.dll 8.17.10.29]
+    Renderer: ATI Mobility Radeon HD 5470 
+    Vendor:   ATI
+    VRAM:     1012 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=1 INTZ=1 NULL=1 RESZ=1 SlowINTZ=1
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\projects\dragon-race\dragon_race_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\projects\dragon-race\dragon_race_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\projects\dragon-race\dragon_race_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\projects\dragon-race\dragon_race_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\projects\dragon-race\dragon_race_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\projects\dragon-race\dragon_race_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.062 seconds
-desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+Platform assembly: C:\Users\Jitter\git\dragon-race\dragon_race_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Jitter\git\dragon-race\dragon_race_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Jitter\git\dragon-race\dragon_race_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Jitter\git\dragon-race\dragon_race_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Jitter\git\dragon-race\dragon_race_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Jitter\git\dragon-race\dragon_race_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Jitter\git\dragon-race\dragon_race_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Jitter\git\dragon-race\dragon_race_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.109 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-Platform assembly: C:\projects\dragon-race\dragon_race_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\projects\dragon-race\dragon_race_Data\Managed\System.dll (this message is harmless)
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.480327 ms
-
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 500.
-Total: 0.368002 ms (FindLiveObjects: 0.048094 ms CreateObjectMapping: 0.050887 ms MarkObjects: 0.259091 ms  DeleteObjects: 0.008377 ms)
-
+Platform assembly: C:\Users\Jitter\git\dragon-race\dragon_race_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Jitter\git\dragon-race\dragon_race_Data\Managed\System.dll (this message is harmless)
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 13.978209 ms
+UnloadTime: 9.707737 ms
 
-Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 138.
-Total: 0.296325 ms (FindLiveObjects: 0.024202 ms CreateObjectMapping: 0.029167 ms MarkObjects: 0.206031 ms  DeleteObjects: 0.035372 ms)
-
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.261573 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 135.
-Total: 0.291361 ms (FindLiveObjects: 0.020168 ms CreateObjectMapping: 0.026374 ms MarkObjects: 0.232096 ms  DeleteObjects: 0.010860 ms)
-
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.556348 ms
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 504.
-Total: 0.561312 ms (FindLiveObjects: 0.049025 ms CreateObjectMapping: 0.041889 ms MarkObjects: 0.449608 ms  DeleteObjects: 0.019237 ms)
-
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 2.157749 ms
-
-Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 138.
-Total: 0.348764 ms (FindLiveObjects: 0.023581 ms CreateObjectMapping: 0.030098 ms MarkObjects: 0.255367 ms  DeleteObjects: 0.037855 ms)
-
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.536489 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 135.
-Total: 0.272433 ms (FindLiveObjects: 0.020479 ms CreateObjectMapping: 0.027615 ms MarkObjects: 0.212237 ms  DeleteObjects: 0.009929 ms)
-
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.522836 ms
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 504.
-Total: 0.534317 ms (FindLiveObjects: 0.049646 ms CreateObjectMapping: 0.042509 ms MarkObjects: 0.422303 ms  DeleteObjects: 0.017686 ms)
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 513.
+Total: 0.583422 ms (FindLiveObjects: 0.070147 ms CreateObjectMapping: 0.041061 ms MarkObjects: 0.452109 ms  DeleteObjects: 0.018392 ms)
 
